@@ -1,0 +1,26 @@
+/* Breakpoints. */
+$mobiles: 768px;
+$tablets: 992px;
+$laptops: 1200px;
+
+:root {
+  /* Breakpoint-specific properties. */
+  --spacing: 1rem;
+  --gridGap: 1rem;
+
+  @media (min-width: $mobiles) {
+    --spacing: 2rem 3rem;
+    --gridGap: 2rem;
+  }
+}
+
+/* Metadata. */
+$fontSize: 16px;
+$fontFamily: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$clrPrimary: white;
+$clrSecondary: #b8b8b8;
+$clrBackground: black;
+$spacing: var(--spacing);
+$gridGap: var(--gridGap);
+$spacerSize: 100px;
