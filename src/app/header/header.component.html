@@ -1,0 +1,11 @@
+<header class="container">
+  <div class="fs-title" aria-label="Page Title">
+    <a routerLink="" class="noDecor">{{ appName }}</a>
+    <span *ngIf="!isLandingComponent">
+      /
+      <a routerLink="{{ currentComponent?.path }}" class="noDecor">{{
+        currentComponent?.label
+      }}</a>
+    </span>
+  </div>
+</header>

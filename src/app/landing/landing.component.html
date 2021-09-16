@@ -1,0 +1,30 @@
+<app-hero></app-hero>
+
+<section class="grid" role="grid">
+  <h1 hidden="true">We have created</h1>
+
+  <app-product
+    [imageName]="products.salahTawqit.imageName"
+    [imageAlt]="products.salahTawqit.imageAlt"
+    [title]="products.salahTawqit.title"
+    [url]="products.salahTawqit.url"
+    [component]="components.mobile"
+  ></app-product>
+
+  <app-product
+    [imageName]="products.seoHelpify.imageName"
+    [imageAlt]="products.seoHelpify.imageAlt"
+    [title]="products.seoHelpify.title"
+    [url]="products.seoHelpify.url"
+    [component]="components.web"
+  ></app-product>
+
+  <app-product
+    class="grid-item-3"
+    [imageName]="products.orderSummary.imageName"
+    [imageAlt]="products.orderSummary.imageAlt"
+    [title]="products.orderSummary.title"
+    [url]="products.orderSummary.url"
+    [component]="components.ui_ux"
+  ></app-product>
+</section>

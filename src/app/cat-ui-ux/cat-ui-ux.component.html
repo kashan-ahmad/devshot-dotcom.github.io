@@ -1,0 +1,28 @@
+<section class="flex fs-paragraph">
+  <h1 hidden="true">
+    User interface/experience components that we have designed
+  </h1>
+
+  <article class="four-column-grid">
+    <p>
+      User interface and experience is what defines the overall rating of an app
+      and the revenue/traffic that app will entertain.
+    </p>
+    <p>
+      Although, there are some use cases where the content of an app is unique
+      enough that it’s user interface and experience is completely ignored.
+    </p>
+  </article>
+  <div role="heading" aria-hidden="true">We have created</div>
+</section>
+<section class="grid" role="grid">
+  <h1 hidden="true">We have created</h1>
+
+  <app-product
+    [imageName]="products.orderSummary.imageName"
+    [imageAlt]="products.orderSummary.imageAlt"
+    [title]="products.orderSummary.title"
+    [url]="products.orderSummary.url"
+    [component]="components.ui_ux"
+  ></app-product>
+</section>

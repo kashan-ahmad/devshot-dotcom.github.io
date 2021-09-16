@@ -1,0 +1,7 @@
+@import "../../assets/scss/vars";
+
+article {
+  & * {
+    color: $clrSecondary;
+  }
+}

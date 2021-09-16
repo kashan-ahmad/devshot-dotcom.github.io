@@ -1,0 +1,16 @@
+<article aria-label="Product" (click)="browse(url)">
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="../../assets/product-images/large/{{ imageName }}"
+    />
+    <img
+      src="../../assets/product-images/medium/{{ imageName }}"
+      alt="{{ imageAlt }}"
+    />
+  </picture>
+  <div class="title fs-paragraph" aria-label="Product title">
+    <span>{{ title }} - </span>
+    <a routerLink="/{{ component?.path }}">{{ component?.label }}</a>
+  </div>
+</article>
